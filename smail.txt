@@ -1,0 +1,35 @@
+História zmien
+
+version 1.00
+
+- ukladá len prílohy majúce zadanú príponu
+- ukladá len prílohy z jedného priečinku ( mailboxu )
+- všetky prílohy ukladá do jediného adresára
+- prečítané správy ( aj tie, čo neobsahujú prílohy daného typu ) z priečinku dokáže presunúť do iného priečinku ( voliteľné )
+
+version 1.01
+
+- možnosť nastaviť UseTLS v Account Settings
+  imap.gmail.com vyžaduje UseImplicitTLS
+  imap.centrum.sk vyžaduje UseExplicitTLS
+
+- ak neexistuje zadaný adresár pre ukladanie príloh, program sa ho pokúsi vytvoriť (celú cestu)
+
+- testy na nezadaný Source Mailbox a Target MailBox
+- test, že Target Maibox musí byť iný ako Source MailBox
+- testy na existenciu Source MailBox a Target MailBox 
+
+- pridaná možnosť vygenerovať správu ( report ) do súboru report.txt
+
+- verifikovanie, či uloženie prílohy prebehlo úspešne
+
+- príloha sa stiahne do súboru "temporary.$$$" a až následne sa premenuje
+
+- ak už existuje súbor s daným menom, nepremaže sa, ale príloha sa uloží do súboru s menom rozšíreným o číslo.
+  napr. príloha.txt -> príloha(1).txt -> ... príloha(9).txt -> ...  
+
+- možnosť prerušiť proces ukladania príloh ( break )
+
+version 1.02
+
+# opravená chyba - tlačidlo Report sa ukázalo, aj keď bol checkbox Report vypnutý
